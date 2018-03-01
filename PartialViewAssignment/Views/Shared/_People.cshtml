@@ -1,0 +1,17 @@
+﻿@model IEnumerable<PartialViewAssignment.Models.People>
+<div style="border:1px solid black;width:500px; font-family:Arial;background:Silver; margin-top:10px">
+    @foreach (var item in Model)
+    {
+    <div style="border:1px solid black;width:500px; font-family:Arial;background:Silver; margin-top:10px">
+        <h2>@item.Name</h2>
+        <p>@item.City</p>
+        <p>@item.Phone</p>
+    </div>
+        //good
+    }
+    @*<h2>@Model.Name</h2>
+    <p>@Model.City</p>
+    <p>@Model.Phone</p>
+    <br />*@
+</div>
+
